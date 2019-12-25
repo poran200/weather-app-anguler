@@ -1,0 +1,23 @@
+<div class="container">
+  <div></div>
+  <div class="form-group">
+    <table class="table table-striped table-inverse table-responsive">
+      <thead class="thead-inverse">
+      <tr>
+        <th>Time</th>
+        <th>Humidity</th>
+        <th> Temperature</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let weatherData of weatherData ">
+        <td scope="row">{{time}}</td>
+        <td scope="row">{{weatherData["humidity"]+'%'}}</td>
+        <td scope="row">{{ weatherData["temp"]+'&#8451;'}}</td>
+        <td>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
