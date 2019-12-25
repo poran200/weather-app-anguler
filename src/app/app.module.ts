@@ -9,7 +9,6 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {IOTService} from './iot.service';
 import {AngularFireStorageModule} from '@angular/fire/storage';
-import {ChartsModule} from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +21,7 @@ import {ChartsModule} from 'ng2-charts';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireStorageModule,
-    ChartsModule
+    AngularFireStorageModule
   ],
   providers: [
     IOTService,
